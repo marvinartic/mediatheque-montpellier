@@ -1,0 +1,135 @@
+/* Base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #121212;
+  }
+  
+  /* Container principal */
+  .profil-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgb(24, 24, 24);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+
+  /* Titre principal */
+  .profil-container h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Liens navigation */
+  .action-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #2833a7;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .action-btn:hover {
+    background-color: #121212;
+  }
+  
+  /* Bouton jaune pour voir */
+  .action-btn.yellow {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .action-btn.yellow:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Grille des livres */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  /* Carte de livre */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #121212;
+    text-align: center;
+  }
+  
+  .card p {
+    font-size: 14px;
+    margin: 4px 0;
+    text-align: center;
+  }
+
+
+  .main-footer {
+    background-color: #1a1a1a;
+    color: #bbb;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  

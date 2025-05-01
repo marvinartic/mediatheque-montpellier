@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #131313, #0f0f0f);
+    padding: 60px 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }  
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+  
+  .pret-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+    animation: fadeIn 0.4s ease-in;
+  }
+  
+  .pret-card p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .pret-card .statut {
+    font-weight: bold;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .statut.rendu {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .statut.en-cours {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .statut.retard {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Bouton retour */
+  a.return {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #28a745;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a.return:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  

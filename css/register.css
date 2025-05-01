@@ -1,0 +1,157 @@
+/* Structure générale */
+body {
+    margin: 0;
+    background-color: #121212;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.ccontainer {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      125% 125% at -2% 101%,
+      rgb(16, 0, 103) 10.5%,
+      rgb(51, 2, 245) 16%,
+      rgb(2, 87, 245) 17.5%,
+      rgb(100, 187, 245) 25%,
+      rgb(79, 135, 170) 100%
+    );
+  }
+/* Container du formulaire */
+form {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center; /* Centrer le contenu */
+    animation: fadeIn 0.6s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+form:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(90, 95, 153, 0.152), 0 0 40px rgba(40, 51, 167, 0.1) inset;
+  }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Champs */
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    color: #fff;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #2833a7;
+    outline: none;
+    box-shadow: 0 0 6px rgba(40, 80, 167, 0.2);
+}
+
+/* Bouton */
+button {
+    background-color: #2833a7;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d2e7a;
+}
+
+/* Liens */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Message de retour */
+p {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+
+.subtitle {
+    text-align: center;
+    color: #bbb;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+  
+footer.footer {
+    background-color: #090909ae;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin-top: 15px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  
+  .footer-links a:hover {
+    opacity: 0.75;
+  }
+  

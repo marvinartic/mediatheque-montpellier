@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #121212;
+}
+.fiche-livre {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fefefe;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.fiche-livre h2 {
+    margin-bottom: 10px;
+}
+
+.fiche-livre form {
+    margin-top: 20px;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.btn-group a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 18px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-group a:hover {
+    background: #218838;
+}
