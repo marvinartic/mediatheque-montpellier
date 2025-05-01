@@ -2,10 +2,17 @@
 require_once '../includes/db.php';
 
 function calculerAge($date_naissance) {
-    $date_naissance = new DateTime($date_naissance);
-    $aujourdhui = new DateTime();
-    $age = $aujourdhui->diff($date_naissance)->y;
-    return $age;
+    if (empty($date_naissance)) {
+        return '—'; // ou retourne 0 si tu veux un chiffre
+    }
+    try {
+        $date_naissance = new DateTime($date_naissance);
+        $aujourdhui = new DateTime();
+        $age = $aujourdhui->diff($date_naissance)->y;
+        return $age;
+    } catch (Exception $e) {
+        return '—';
+    }
 }
 
 $stmt = $pdo->query("
@@ -101,12 +108,12 @@ $adherents = $stmt->fetchAll();
                 $statut = 'Non';
                 $classe_statut = 'statut-non';
 
-                if ($age < 18) {
+                if (is_numeric($age) && $age < 18) {
                     if ($a['statut_abonnement'] === 'actif') {
                         $statut = 'Actif';
                         $classe_statut = 'statut-actif';
                     }
-                } else {
+                } elseif (is_numeric($age)) {
                     if ($a['statut_abonnement'] === 'actif') {
                         $statut = 'Actif';
                         $classe_statut = 'statut-actif';

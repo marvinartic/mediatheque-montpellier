@@ -40,7 +40,7 @@ $user_email = $user_data['email'];
         <ul>
             <li><a href="abonnements/gestion.php">Gestion des abonnements</a></li>
             <li><a href="adherents/lister.php">Gestion des adhérents</a></li>
-            <li><a href="livres/lister.php">Gestion des livres</a></li>
+            <li><a href="livres/lister.php">Gestion des livres / DVD / CD / Magazines</a></li>
             <li><a href="prets/historique.php">Historique des prêts</a></li>
         </ul>
 
